@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="admin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinic.controller.AdminController">
+	<children>
+		<MenuBar>
+			<menus>
+				<Menu mnemonicParsing="false" onAction="#EditMenu" text="Edit">
+               <items>
+                  <MenuItem fx:id="addMember" mnemonicParsing="false" text="Add Member" />
+                  <MenuItem fx:id="changePassword" mnemonicParsing="false" text="Change Password" />
+                  <MenuItem fx:id="logout" mnemonicParsing="false" text="Logout" />
+               </items></Menu>
+				<Menu mnemonicParsing="false" onAction="#ViewMenu" text="View">
+               <items>
+                  <MenuItem fx:id="viewDoctor" mnemonicParsing="false" text="View Doctor" />
+                  <MenuItem fx:id="viewReception" mnemonicParsing="false" text="View Receptionist" />
+                  <MenuItem fx:id="viewPatient" mnemonicParsing="false" text="View Patient" />
+               </items></Menu>
+			</menus>
+			<VBox.margin>
+				<Insets />
+			</VBox.margin>
+		</MenuBar>
+		<StackPane prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+			<children>
+<<<<<<< HEAD
+
+				<VBox fx:id="adVbAddDoctor" prefHeight="200.0" prefWidth="100.0" visible="false">
+
+
+				<VBox fx:id="adVbAddDoctor" prefHeight="200.0" prefWidth="100.0" stylesheets="@application.css" visible="false">
+
+				<VBox fx:id="adVbAddDoctor" prefHeight="200.0" prefWidth="100.0">
+
+=======
+				<VBox fx:id="adVbAddDoctor" prefHeight="200.0" prefWidth="100.0" visible="false">
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+					<children>
+						<Label alignment="CENTER" contentDisplay="CENTER" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Add Member">
+							<VBox.margin>
+								<Insets />
+							</VBox.margin>
+							<graphic>
+								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Robot Diversity Clinic Management System" />
+							</graphic>
+						</Label>
+						<VBox prefHeight="250.0" prefWidth="100.0">
+							<children>
+                        <HBox alignment="CENTER" prefHeight="249.0" prefWidth="700.0">
+                           <children>
+                              <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                 <children>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Member ID     " />
+            										<TextField />
+
+            										<Label prefWidth="100.0" text="       Member ID     " />
+            										<TextField fx:id="memberId" />
+
+=======
+            										<Label prefWidth="100.0" text="       Member ID     " />
+            										<TextField fx:id="memberId" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Name     " />
+            										<TextField />
+
+            										<Label prefWidth="100.0" text="       Name     " />
+            										<TextField fx:id="memberName" />
+
+=======
+            										<Label prefWidth="100.0" text="       Name     " />
+            										<TextField fx:id="memberName" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Identity Card" />
+            										<TextField />
+
+            										<Label prefWidth="100.0" text="       Identity Card" />
+            										<TextField fx:id="idendityCard" />
+
+=======
+            										<Label prefWidth="100.0" text="       Identity Card" />
+            										<TextField fx:id="idendityCard" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Date Of Birth" />
+            										<DatePicker />
+
+            										<Label prefWidth="100.0" text="       Date Of Birth" />
+            										<DatePicker fx:id="dateOfBirth" />
+
+=======
+            										<Label prefWidth="100.0" text="       Date Of Birth" />
+            										<DatePicker fx:id="dateOfBirth" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Position" />
+            										<RadioButton fx:id="labatt" mnemonicParsing="false" text="Doctor" textFill="#1d77dd" />
+            										<RadioButton fx:id="labatt" mnemonicParsing="false" text="Receptionist" textFill="#1d77dd">
+            											<HBox.margin>
+            												<Insets left="10.0" />
+            											</HBox.margin>
+            										</RadioButton>
+            										<RadioButton fx:id="labatt" mnemonicParsing="false" text="Admin" textFill="#1d77dd">
+            											<HBox.margin>
+            												<Insets left="10.0" />
+            											</HBox.margin>
+            										</RadioButton>
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            										<Label prefWidth="100.0" text="       Position" />
+            										<RadioButton fx:id="doctorRbt" mnemonicParsing="false" text="Doctor" />
+            										<RadioButton fx:id="receptionistRbt" mnemonicParsing="false" text="Receptionist" />
+            										<RadioButton fx:id="adminRbt" mnemonicParsing="false" text="Admin" />
+<<<<<<< HEAD
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                                 <children>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Address" />
+            										<TextField>
+
+            										<Label prefWidth="100.0" text="       Address" />
+            										<TextField fx:id="memberAddress">
+
+=======
+            										<Label prefWidth="100.0" text="       Address" />
+            										<TextField fx:id="memberAddress">
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            											<HBox.margin>
+            												<Insets right="50.0" />
+            											</HBox.margin>
+            										</TextField>
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Phone No" />
+            										<TextField>
+
+            										<Label prefWidth="100.0" text="       Phone No" />
+            										<TextField fx:id="memberPhone">
+
+=======
+            										<Label prefWidth="100.0" text="       Phone No" />
+            										<TextField fx:id="memberPhone">
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            											<HBox.margin>
+            												<Insets right="50.0" />
+            											</HBox.margin>
+            										</TextField>
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Email Address" />
+            										<TextField>
+
+            										<Label prefWidth="100.0" text="       Email Address" />
+            										<TextField fx:id="memberEmail">
+
+=======
+            										<Label prefWidth="100.0" text="       Email Address" />
+            										<TextField fx:id="memberEmail">
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            											<HBox.margin>
+            												<Insets right="50.0" />
+            											</HBox.margin>
+            										</TextField>
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Password" />
+            										<PasswordField />
+
+            										<Label prefWidth="100.0" text="       Password" />
+            										<PasswordField fx:id="memberPassword" />
+
+=======
+            										<Label prefWidth="100.0" text="       Password" />
+            										<PasswordField fx:id="memberPassword" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+            								<HBox prefHeight="100.0" prefWidth="200.0">
+            									<children>
+<<<<<<< HEAD
+
+            										<Label fx:id="lab" prefWidth="100.0" text="       Gender" />
+            										<RadioButton fx:id="labatt" mnemonicParsing="false" prefWidth="70.0" text="Male" textFill="#1d77dd" />
+            										<RadioButton fx:id="labatt" mnemonicParsing="false" text="Female" textFill="#1d77dd">
+            											<HBox.margin>
+            												<Insets right="70.0" />
+            											</HBox.margin>
+            										</RadioButton>
+
+            										<Label prefWidth="100.0" text="       Gender" />
+            										<RadioButton fx:id="memberMale" mnemonicParsing="false" prefWidth="70.0" text="Male" />
+            										<RadioButton fx:id="memberFemale" mnemonicParsing="false" text="Female" />
+
+=======
+            										<Label prefWidth="100.0" text="       Gender" />
+            										<RadioButton fx:id="memberMale" mnemonicParsing="false" prefWidth="70.0" text="Male" />
+            										<RadioButton fx:id="memberFemale" mnemonicParsing="false" text="Female" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+            									</children>
+            								</HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" VBox.vgrow="ALWAYS">
+                           <children>
+<<<<<<< HEAD
+
+                              <Button fx:id="adBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="INSERT" />
+                              <Button fx:id="adBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="CLEAR" />
+
+                              <Button mnemonicParsing="false" onAction="#createMember" prefWidth="60.0" text="INSERT" />
+                              <Button mnemonicParsing="false" onAction="#clear" prefWidth="60.0" text="CLEAR" />
+
+=======
+                              <Button mnemonicParsing="false" onAction="#createMember" prefWidth="60.0" text="INSERT" />
+                              <Button mnemonicParsing="false" onAction="#clear" prefWidth="60.0" text="CLEAR" />
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+                           </children>
+                        </HBox>
+							</children>
+						</VBox>
+<<<<<<< HEAD
+
+						<TableView prefHeight="100.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+
+						<TableView fx:id="memberTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+
+=======
+						<TableView fx:id="memberTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+							<columns>
+								<TableColumn prefWidth="70.0" text="C1" />
+								<TableColumn prefWidth="70.0" text="C2" />
+								<TableColumn prefWidth="70.0" text="C3" />
+								<TableColumn prefWidth="70.0" text="C4" />
+								<TableColumn prefWidth="70.0" text="C5" />
+								<TableColumn prefWidth="70.0" text="C6" />
+								<TableColumn prefWidth="70.0" text="C7" />
+								<TableColumn prefWidth="70.0" text="C8" />
+								<TableColumn prefWidth="70.0" text="C9" />
+								<TableColumn prefWidth="70.0" text="C10" />
+							</columns>
+						</TableView>
+					</children>
+				</VBox>
+				<VBox fx:id="adVbViewDoctor" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+					<children>
+						<Label alignment="CENTER" contentDisplay="CENTER" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="View Doctor">
+							<graphic>
+								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Robot Diversity Clinic Management System" />
+							</graphic>
+						</Label>
+						<HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+							<children>
+								<Label text="Doctor Name   :   " />
+								<TextField fx:id="doctorName" />
+							</children>
+						</HBox>
+						<Button maxWidth="60.0" mnemonicParsing="false" onAction="#findDoctor" text="Search" />
+						<Label prefHeight="50.0" />
+						<TableView fx:id="doctorTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+							<columns>
+								<TableColumn prefWidth="70.0" text="C1" />
+								<TableColumn prefWidth="70.0" text="C2" />
+								<TableColumn prefWidth="70.0" text="C3" />
+								<TableColumn prefWidth="70.0" text="C4" />
+								<TableColumn prefWidth="70.0" text="C5" />
+								<TableColumn prefWidth="70.0" text="C6" />
+								<TableColumn prefWidth="70.0" text="C7" />
+								<TableColumn prefWidth="70.0" text="C8" />
+								<TableColumn prefWidth="70.0" text="C9" />
+								<TableColumn prefWidth="70.0" text="C10" />
+							</columns>
+						</TableView>
+					</children>
+				</VBox>
+				<VBox fx:id="adVbViewReceptionist" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+					<children>
+						<Label alignment="CENTER" contentDisplay="CENTER" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="View Receptionist">
+							<graphic>
+								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Robot Diversity Clinic Management System" />
+							</graphic>
+						</Label>
+						<HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+							<children>
+								<Label text="Receptionist Name   :   " />
+								<TextField fx:id="receptionistName" />
+							</children>
+						</HBox>
+						<Button maxWidth="60.0" mnemonicParsing="false" onAction="#findReceptionist" text="Search" />
+						<Label prefHeight="50.0" />
+						<TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+							<columns>
+								<TableColumn prefWidth="70.0" text="C1" />
+								<TableColumn prefWidth="70.0" text="C2" />
+								<TableColumn prefWidth="70.0" text="C3" />
+								<TableColumn prefWidth="70.0" text="C4" />
+								<TableColumn prefWidth="70.0" text="C5" />
+								<TableColumn prefWidth="70.0" text="C6" />
+								<TableColumn prefWidth="70.0" text="C7" />
+								<TableColumn prefWidth="70.0" text="C8" />
+								<TableColumn prefWidth="70.0" text="C9" />
+								<TableColumn prefWidth="70.0" text="C10" />
+							</columns>
+						</TableView>
+					</children>
+				</VBox>
+				<VBox fx:id="adVbViewPatient" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+					<children>
+<<<<<<< HEAD
+
+                  <VBox fx:id="viewPatientImg" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+      						<Label alignment="CENTER" contentDisplay="CENTER" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="View Patient" textFill="#4a13bf">
+      							<graphic>
+      								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Robot Diversity Clinic Management System" textFill="BLUE">
+                                 <font>
+                                    <Font name="Bell MT" size="12.0" />
+                                 </font>
+                              </Label>
+      							</graphic>
+                           <font>
+                              <Font name="DilleniaUPC Bold" size="36.0" />
+                           </font>
+      						</Label>
+      						<HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+      							<children>
+      								<Label text="Patient Name   :   " textFill="#13fffb">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Label>
+      								<TextField fx:id="patientName" />
+      							</children>
+      						</HBox>
+      						<Button fx:id="adBtn" mnemonicParsing="false" onAction="#findPatient" prefHeight="30.0" prefWidth="60.0" text="Search" />
+                     </children>
+                  </VBox>
+						<TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+						<Label alignment="CENTER" contentDisplay="CENTER" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="View Patient">
+							<graphic>
+								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="650.0" text="Robot Diversity Clinic Management System" />
+							</graphic>
+						</Label>
+						<HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+							<children>
+								<Label text="Patient Name   :   " />
+								<TextField fx:id="patientName" />
+							</children>
+						</HBox>
+						<Button maxWidth="60.0" mnemonicParsing="false" onAction="#findPatient" text="Search" />
+						<Label prefHeight="50.0" />
+						<TableView fx:id="patientTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+<<<<<<< HEAD
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+							<columns>
+								<TableColumn prefWidth="70.0" text="C1" />
+								<TableColumn prefWidth="70.0" text="C2" />
+								<TableColumn prefWidth="70.0" text="C3" />
+								<TableColumn prefWidth="70.0" text="C4" />
+								<TableColumn prefWidth="70.0" text="C5" />
+								<TableColumn prefWidth="70.0" text="C6" />
+								<TableColumn prefWidth="70.0" text="C7" />
+								<TableColumn prefWidth="70.0" text="C8" />
+								<TableColumn prefWidth="70.0" text="C9" />
+								<TableColumn prefWidth="70.0" text="C10" />
+							</columns>
+						</TableView>
+					</children>
+				</VBox>
+				<VBox fx:id="adChangePassword" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+					<children>
+						<Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="650.0" text="Changed Password">
+							<graphic>
+								<Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" prefWidth="650.0" text="Robot Diversity Clinic Management System" />
+							</graphic>
+						</Label>
+<<<<<<< HEAD
+
+                  <VBox fx:id="changeImg" alignment="TOP_CENTER" prefHeight="360.0" prefWidth="700.0">
+                     <children>
+      						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+      							<children>
+      								<Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="Old Password   :" textFill="#3167e7">
+      									<HBox.margin>
+      										<Insets />
+      									</HBox.margin>
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+      								</Label>
+      								<PasswordField>
+      									<HBox.margin>
+      										<Insets left="10.0" />
+      									</HBox.margin>
+      								</PasswordField>
+      							</children>
+      						</HBox>
+      						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+      							<children>
+      								<Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="New Password   :" textFill="#3167e7">
+      									<HBox.margin>
+      										<Insets />
+      									</HBox.margin>
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+      								</Label>
+      								<PasswordField>
+      									<HBox.margin>
+      										<Insets left="10.0" />
+      									</HBox.margin>
+      								</PasswordField>
+      							</children>
+      						</HBox>
+      						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+      							<children>
+      								<Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="180.0" text="Re-Type New Password   : " textFill="#3167e7">
+      									<HBox.margin>
+      										<Insets />
+      									</HBox.margin>
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+      								</Label>
+      								<PasswordField>
+      									<HBox.margin>
+      										<Insets left="10.0" />
+      									</HBox.margin>
+      								</PasswordField>
+      							</children>
+      						</HBox>
+      						<Button fx:id="adBtn" mnemonicParsing="false" onAction="#updatePassword" prefHeight="30.0" prefWidth="60.0" text="Submit" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+							<children>
+								<Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="150.0" text="Old Password   :">
+									<HBox.margin>
+										<Insets />
+									</HBox.margin>
+								</Label>
+								<PasswordField fx:id="oldPassword">
+									<HBox.margin>
+										<Insets left="10.0" />
+									</HBox.margin>
+								</PasswordField>
+							</children>
+						</HBox>
+						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+							<children>
+								<Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="150.0" text="New Password   :">
+									<HBox.margin>
+										<Insets />
+									</HBox.margin>
+								</Label>
+								<PasswordField fx:id="newPassword">
+									<HBox.margin>
+										<Insets left="10.0" />
+									</HBox.margin>
+								</PasswordField>
+							</children>
+						</HBox>
+						<HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+							<children>
+								<Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="150.0" text="Re-Type New Password   : ">
+									<HBox.margin>
+										<Insets />
+									</HBox.margin>
+								</Label>
+								<PasswordField fx:id="confirmPassword">
+									<HBox.margin>
+										<Insets left="10.0" />
+									</HBox.margin>
+								</PasswordField>
+							</children>
+						</HBox>
+						<Button mnemonicParsing="false" onAction="#updatePassword" prefWidth="60.0" text="Submit" />
+<<<<<<< HEAD
+
+=======
+>>>>>>> 70c16522a6a1de5b3aa300f335e05b3fe932fce1
+					</children>
+				</VBox>
+			</children>
+		</StackPane>
+	</children>
+</VBox>

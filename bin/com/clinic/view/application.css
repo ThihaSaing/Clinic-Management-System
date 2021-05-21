@@ -1,0 +1,91 @@
+#homeLabel{
+	-fx-text-fill: #0000FF;
+	-fx-font-size:25.0px;
+	-fx-font: 25px Tahoma;	
+}
+#btn{
+	-fx-font-size:16px;	
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color:#63B4FB;
+}
+#home{
+	-fx-background-image: url("images/home.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-size:600 300;
+	-fx-background-position:center center;
+	-fx-effect: dropshadow(three-pass-box,pink,30,0.5,0,0);
+}
+#loginLabel1{
+	-fx-text-fill: #9A42A7;
+	-fx-font-size:25px;
+}
+#loginlabel2{
+	-fx-text-fill: #923C9F;
+	-fx-font-size:20px;
+}
+#login{
+	-fx-background-image:url("images/login.png");
+	-fx-background-repeat: stretch;
+	-fx-background-size:600 400;
+	-fx-background-position:center center;
+}
+#AdMenu{
+	-fx-text-fill: #0096C9;
+	-fx-font-size:15px;
+}
+#AdMenulabel{
+	-fx-font-family: Arial;
+	-fx-background-fills: #AAAAAA;
+}
+#lab{
+	-fx-font-family:Arial Black;
+	-fx-text-fill: #9942A5;
+	}
+#labatt{
+	-fx-font-family:Tahoma;
+	-fx-text-fill: #1426eb;
+	}
+#adBtn{
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color:#63B4FB;
+}
+#AddMemberVb{
+	-fx-background-image:url("images/addmember.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+	-fx-background-color:#CDD1DA;
+}
+#addAboveLab{
+	-fx-text-fill: #1426eb;
+}
+#addMemLab{
+	-fx-background-color:#CDD1DA;
+}
+#viewDoctorImg{
+	-fx-background-image:url("images/viewdoctor.png");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+}
+#viewRecImg{
+	-fx-background-image:url("images/recimg.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+}
+#viewPatientImg{
+	-fx-background-image:url("images/viewpatient.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+}
+#changeImg{
+	-fx-background-image:url("images/changeimg3.png");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+}
+#adChangePassword{
+	-fx-background-color:#FFFFFF;
+}
+#dischargeVb{
+	-fx-background-image:url("images/9.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position:center center;
+}
